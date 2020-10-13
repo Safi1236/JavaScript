@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>My Landing Page</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Random Image">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="#">contect Us</a></li>
+
+        </ul>
+    </nav>
+
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+            <h1>Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deserunt?</p>
+            <button class="apply" id="open">Apply Now</button>
+        </button>
+    </header>
+
+    <div class="container">
+        <h2>Cloud Native Computting</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti modi animi ab maiores, deserunt distinctio corrupti tempore at fuga nemo officia dolor ipsa impedit voluptates reprehenderit aliquam sequi. Atque, itaque!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, deleniti distinctio possimus repellat, eum voluptas eligendi natus, ullam debitis placeat reprehenderit quo aperiam beatae commodi! Ad, ipsum aut! Quia, perferendis!</p>
+
+        <h2>More Information</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, nesciunt eius. Hic vitae necessitatibus reprehenderit nam dolore nostrum ullam ad, eum nobis, cupiditate excepturi deserunt, amet qui ipsum quis. Quos!</p>
+
+        <h2>Syllabus</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+
+        </ul>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui corporis quaerat, sunt, molestias culpa repellendus magni doloremque excepturi minus porro vero laboriosam. Reprehenderit soluta eveniet facilis labore, officiis sed iste!</p>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Apply</h3>
+            </div>
+            <div class="modal-content">
+                <p>To sign up for classes please submit this form.</p>
+                <form  class="modal-form">
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" id="name" placeholder="Full Name" class="form-input">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" id="email" placeholder="Email" class="form-input">
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="Pssword" class="form-input">
+                    </div>
+                    <div>
+                        <label>Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Confrim Password" class="form-input">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
