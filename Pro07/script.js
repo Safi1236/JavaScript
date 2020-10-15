@@ -16,7 +16,7 @@ let selectedWord = wordsPool[Math.floor(Math.random() * wordsPool.length)];
 
 // Arrays to classify the input of the user
 const correctLetters = [];
-const incorrectLetters = ['a'];
+const incorrectLetters = [];
 
 // Function to display the word on the screen
 function displaySelectedWord(){
