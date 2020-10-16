@@ -42,7 +42,29 @@ function searchMeal(e){
     // Clear Search Term 
      search.value = '';
 }
+// Function to fetch meal data using teh meal id
+function getMealById(mealId){
+    fetch()
+}
 
 // Event Listner
 // 1. Submit
 submit.addEventListener('submit', searchMeal);
+
+// 2. When clicking the meal
+mealContainer.addEventListener('click', e => {
+    const mealInfo = e.path.find( item => {
+        if(item.classList){
+            return item.classList.contains('meal-info');
+        }
+        else{
+            return false
+        }
+    });
+
+    if(mealInfo){
+        const mealId = mealInfo.getAttribute('data-mealid');
+        getMealById(mealId);    }
+
+
+});
